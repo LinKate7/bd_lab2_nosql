@@ -1,0 +1,11 @@
+clear mysql
+source publishing.sql
+
+clear mongodb
+use bookstore;  
+db.dropDatabase();
+
+
+SET profiling = 1;
+SHOW PROFILES;
+SHOW PROFILE FOR QUERY 1;
